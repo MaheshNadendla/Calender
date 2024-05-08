@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Calender.css" />
+  </head>
+  <body>
+    <header>
+      <span class="menu-button">&#9776; Menu</span>
+      <h1  class="head" >Calender Finder</h1>
+      <p>Welcome to My website</p>
+    </header>
+
+    
+
+    <marquee class="Float" behavior="scroll" direction="left" loop="1"
+      >Enter The Year In Search Bar. To Get The Calender</marquee
+    >
+    <br>
+
+    <div class="headbutons">
+      <button class="NP" class="PREV" onclick="prevyear()">PREV YEAR</button>
+      <span class="Enteryr">Enter Year</span>
+      <input
+        type="text"
+        onkeydown="checkEnter(event)"
+        class="year1"
+        class="year2"
+        placeholder="Enter Year"
+      />
+
+      <button
+        class="submitbtn"
+        onclick="
+        Calculation()
+        "
+      >
+        SUBMIT
+      </button>
+      <button class="NP" calss="NEXT" onclick="nextyear()">NEXT YEAR</button>
+    </div>
+    <div class="Invalid-input"></div>
+    <div id="Total24">
+      <div class="one">
+        <div class="JAN"></div>
+        <div class="FEB"></div>
+        <div class="MAR"></div>
+      </div>
+
+      <div class="two">
+        <div class="APR"></div>
+        <div class="MAY"></div>
+        <div class="JUN"></div>
+      </div>
+
+      <div class="three">
+        <div class="JUL"></div>
+        <div class="AUG"></div>
+        <div class="SEP"></div>
+      </div>
+
+      <div class="four">
+        <div class="OCT"></div>
+        <div class="NOV"></div>
+        <div class="DEC"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        &copy; 2024 My New Website. All rights reserved. |
+        <a href="#privacy-policy">Privacy Policy</a> |
+        <a href="#terms-of-service">Terms of Service</a>
+      </p>
+      <p>
+        Haliya Main Street, Nalgonda, Hyderbad | Mahesh147@gmail.com | (123)
+        456-7890
+      </p>
+    </div>
+
+    <script src="Calender.js"></script>
+  </body>
+</html>
